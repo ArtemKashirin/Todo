@@ -1,0 +1,14 @@
+<div class="todo-form">
+  <h1>ToDo</h1>
+  <form class="form" [formGroup]="form" (ngSubmit)="addTodo()">
+    <input type = "text" placeholder="Название задачи..." class="form-title" formControlName="title">
+    <input type = "text" placeholder="Описание задачи..." class="form-description" formControlName="description">
+    <button type="submit" [disabled]="form.invalid">Добавить</button>
+  </form >
+  <hr >
+  <app-todo-list *ngFor="let todo of todos; let idx = index" (delete)="deleteItem(idx)"
+                 [todos]="todo"></app-todo-list>
+</div>
+
+
+

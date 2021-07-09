@@ -1,0 +1,23 @@
+h1{
+  font-size: 1.5rem;
+  text-align: center;
+  margin: .5rem 0 .5rem 0
+}
+.form{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text']{
+  padding: 0 .5rem;
+
+}
+
+.form-title, .form-description{
+  margin-bottom: .5rem;
+}
+
+.form{
+  margin-bottom: .5rem;
+}

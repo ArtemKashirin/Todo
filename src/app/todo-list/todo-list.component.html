@@ -1,0 +1,8 @@
+<div class="list-item" >
+  <h2 class="item-title">{{ todos.title }}</h2>
+  <p class="item-description">{{ todos.description }}</p>
+  <div class="item-btn">
+    <button class="btn-done" (click)="doneTodo()" [disabled]="isDone">Done</button>
+    <button class="btn-del" [hidden]="isDone" (click)="deleteTodo()">Delete</button>
+  </div>
+</div>

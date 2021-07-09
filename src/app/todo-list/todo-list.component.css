@@ -1,0 +1,22 @@
+.list-item{
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.item-title{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+
+}
+.item-description{
+  margin-top: .5rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.btn-done{
+  margin: .5rem;
+}
